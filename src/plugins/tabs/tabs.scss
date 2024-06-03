@@ -1,0 +1,156 @@
+/*Tab component*/
+    .css-tabs-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        border-bottom-color: var(--css-tab-label-selected-border-bottom-color,
+                #428fc1);
+
+        input[type='radio'] {
+            // display: block;
+            position: absolute;
+            // opacity: 0;
+        }
+
+        label.css-tab-label {
+            flex-grow: unset;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            margin: 0 0 calc(-1 * var(--css-tab-content-border-top-width, 1px)) 0;
+            z-index: 1;
+            padding-top: var(--css-tab-label-padding-top, 8px);
+            padding-right: var(--css-tab-label-padding-right, 6px);
+            padding-bottom: var(--css-tab-label-padding-bottom, 8px);
+            padding-left: var(--css-tab-label-padding-left, 6px);
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            border: none;
+            opacity: 0.9;
+            border-radius: 0;
+            text-align: center;
+            border-top-width: 0;
+            border-right-width: 0px;
+            border-bottom-width: var(--css-tab-underline-width, 4px);
+            border-left-width: 0;
+            border-style: solid;
+
+            //color: var(--css-tab-label-text-color, #666);
+            border-bottom-color: var(--css-tab-label-selected-border-bottom-color,
+                    #ccc);
+
+            &:active {
+                background-color: var(--css-tab-label-active-background-color, #ccc);
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .css-tab-content {
+            display: none;
+            padding: 20px 30px 30px;
+            width: 100%;
+        }
+
+        label.css-tab-label:has(input[type="radio"]:checked) + .css-tab-content {
+            display: block;
+            
+        }
+        input[type='radio']:checked+label.css-tab-label {
+            opacity: 1;
+            font-weight: var(--css-tab-label-selected-font-weight, bold);
+            //color: var(--css-tab-label-selected-text-color, #000000);
+            border-bottom-color: var(--css-tab-label-selected-border-bottom-color,
+                    #428fc1);
+            border-bottom-color: inherit;
+        }
+
+        &.solid-tabs {
+            opacity: 1;
+
+            .css-tab-content {
+                border-width: var(--css-tab-content-border-width, 1px);
+                border-style: solid;
+                border-top-color: var(--css-tab-content-panel-border-top-color, #000000);
+                border-top-color: inherit;
+                border-right-color: var(--css-tab-content-panel-border-right-color, #000000);
+                border-right-color: inherit;
+                border-bottom-color: var(--css-tab-content-panel-border-bottom-color,
+                        #000000);
+                border-bottom-color: inherit;
+                border-left-color: var(--css-tab-content-panel-border-left-color, #000000);
+                border-left-color: inherit;
+            }
+
+            label.css-tab-label {
+                background: var(--css-tab-label-background-color, #e5e5e5);
+                //color: var(--css-tab-label-text-color, #7f7f7f);
+                border: none;
+                border-radius: 0;
+                text-align: center;
+                border-width: var(--css-tab-content-border-width, 1px);
+                border-style: solid;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: var(--css-tab-label-border-bottom-color, #000000);
+                border-bottom-color: inherit;
+                border-left-color: transparent;
+
+                &:hover {
+                    background: var(--css-tab-label-hover-background-color, #d8d8d8);
+                }
+
+                &:active {
+                    background: var(--css-tab-label-active-background-color, #ccc);
+                }
+            }
+
+            input[type='radio']:checked+label.css-tab-label {
+                background: var(--css-tab-label-selected-background-color, #ffffff);
+                //color: var(--css-tab-label-selected-text-color, #000000);
+                border-top-color: var(--css-tab-label-border-top-color, #000000);
+                border-top-color: inherit;
+                border-right-color: var(--css-tab-label-border-right-color, #000000);
+                border-right-color: inherit;
+                border-bottom-color: transparent;
+                border-left-color: var(--css-tab-label-border-left-color, #000000);
+                border-left-color: inherit;
+            }
+        }
+
+        input[type='radio']:checked+label.css-tab-label+div.css-tab-content {
+            display: block;
+        }
+
+        &.full-width-tabs {
+            label.css-tab-label {
+                flex-grow: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            div.css-tab-content {
+                order: 99;
+            }
+
+            label.css-tab-label {
+                width: auto;
+            }
+
+            &.solid-tabs {
+                label.css-tab-label {
+                    border-radius: var(--css-tab-border-radius, 4px) var(--css-tab-border-radius, 4px) 0 0;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            label.css-tab-label {
+                width: 100% !important;
+                flex-grow: unset;
+            }
+        }
+    }
+

@@ -1,0 +1,773 @@
+<div class="container-fluid amaze-content-wrapper">
+      <div id="i4pu7w">
+            <div id="iy6e">
+                  <p id="imo2">TROUBLESHOOT OKTA SIGN-IN ISSUES
+                  </p>
+                  <h1 id="i46u">What do I do if I can't sign in?
+                  </h1>
+            </div>
+            <div id="i2lnf" class="has-background-image"></div>
+      </div>
+      <h1 id="iotji">Occasionally, you may find yourself in a situation where you're having trouble logging into Okta.
+            This could be for any number of reasons such as needing further authentication, incorrect username or
+            password, or device conflict. In this article, we'll help you troubleshoot the top three issues and get to
+            the root of the issue.</h1>
+      <div id="ikm3dh">
+            <div id="i9hdx8" class="d-flex flex-column">
+                  <div id="iz8kmf" class="is-card is-card-circle is-light-text shadow-1">
+                        <div id="i45ett" class="is-card-content-centered">
+                              <p id="i6mycu" class="size-38 default-font1">01</p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div id="iz3r4x" class="center col-md-12">
+                              <div id="i6yw2i" class="display">
+                                    <p id="izzhrg">PROBLEM</p>
+                                    <h1 id="i1zd9k">I'm unable to sign in to Okta on my new phone.
+                                    </h1>
+                              </div>
+                        </div>
+                  </div>
+                  <p id="iqq8oj">All the apps on my work PC are working with two factor authentication through Okta
+                        Verify on my phone. I am also able to run apps in the same way on my personal computer, which is
+                        a MacBook. However, on my phone, when I open an application and am prompted for my credentials,
+                        Username and Password (Powered by Okta), I am met with the error 'Unable to sign in'.
+                  </p>
+            </div>
+            <div id="ibvmk2" class="has-background-image"></div>
+      </div>
+      <div id="irgbxe" class="row">
+            <div id="ilds0n" class="col-sm-6 col-md-6"><img src="https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/158c4269-4467-4b8b-baa3-415bc67ed400/medium" alt="An black man and a black woman looking directly at the camera wearing suits" id="ipxf3k">
+            </div>
+            <div id="ii7stk" class="d-flex flex-column">
+                  <div id="icuzr" class="row">
+                        <div id="itjv6x" class="center col-md-12">
+                              <div id="i8oh04" class="display">
+                                    <p id="in07qd">SOLUTION</p>
+                                    <h1 id="iddhxg">Okta works by binding to your hardware.
+                                    </h1>
+                              </div>
+                        </div>
+                  </div>
+                  <p id="iea8on">Okta Verify works by binding to your physical phone hardware and the installed software
+                        instance.<br><br>Okta Verify only works on one device for each Okta account. Uninstalling
+                        Okta Verify, Changing Phones, Transferring or Restoring your Phone Data, using Mobile Phone
+                        Cleaning Apps, or Resetting your Phone are some of the things that may result in the binding
+                        being broken between your phone and Okta Verify, and you will need to re-enroll your device in
+                        Okta Verify. To do this, you'll need to contact your organization's IT
+                        department.<br><br>However, you may be able to reset Okta Verify yourself. Check out
+                        https://support.okta.com/help/s/article/Resetting-your-Okta-Verify-Token?language=en_US. If
+                        you're unable to follow the steps in this document, or the option to select another factor isn't
+                        available, then please contact your IT Department and they will be able to assist you and get
+                        you up and running.</p>
+            </div>
+      </div>
+      <div id="inkbmf" class="d-flex flex-column">
+            <div id="i59obc" class="is-card is-card-circle is-light-text shadow-1">
+                  <div id="ii9gw7" class="is-card-content-centered">
+                        <p id="iy9ynb" class="size-38 default-font1">02</p>
+                  </div>
+            </div>
+            <div class="row">
+                  <div id="imcp1e" class="center col-md-12">
+                        <div id="izaqug" class="display">
+                              <p id="i7n1uf">PROBLEM</p>
+                              <h1 id="ibmfel">I'm getting various login errors.
+                              </h1>
+                        </div>
+                  </div>
+            </div>
+            <p id="iqwcay">I'm getting the login error "Login Error: Could not validate the following SAML Authnrequest
+                  from the partner" and I can't seem to get around it. I'm also seeing "Login Error: Received an
+                  assertion that is valid in the future".<br><br>What do I do?</p>
+      </div>
+      <div id="ivo4c-3">
+            <div id="ig64g-3" class="d-flex flex-column">
+                  <div id="id1sxm" class="d-flex flex-column">
+                        <div class="row">
+                              <div id="intmud" class="center col-md-12">
+                                    <div id="ihsur9" class="display">
+                                          <p id="inkaty">SOLUTION</p>
+                                          <h1 id="ibsf1p">You'll need to make some changes in settings and resync.
+                                          </h1>
+                                    </div>
+                              </div>
+                        </div>
+                        <p id="ixd5fk">To fix the error "Login Error: Could not validate the following SAML Authnrequest
+                              from the partner":
+                        </p>
+                        <div froala-component="true" id="ie9lja-froala-component" class="fr-view">
+                              <p id="isPasted">1. Log in to the Access Gateway Admin UI console.</p>
+                              <p>2.Select the Settings tab.</p>
+                              <p>3.Select Advanced.</p>
+                              <p>4.Verify that the time is correct.</p>
+                              <p>5.If the time is not correct, click Resync.</p>
+                              <p>6.Click the refresh button to refresh system time and verify that it is current.&nbsp;
+                              </p>
+                              <p>7.Test the application to determine if time is synchronized correctly..</p>
+                        </div>
+                        <p id="inep7o">To fix the error "Login Error: Received an assertion that is valid in the
+                              future":
+                        </p>
+                        <div froala-component="true" id="injgyr-froala-component" class="fr-view">
+                              <p id="isPasted">1. Log in to the Access Gateway Management console.</p>
+                              <p>2.Select the Service option, and then select the NTP option.</p>
+                              <p>3.Choose the option to restart the NTP service.</p>
+                              <p>4.Check the time in the Access Gateway web console.</p>
+                              <p>5.Test the application.</p>
+                        </div>
+                  </div>
+            </div>
+            <div id="i2lnf-3" class="has-background-image"></div>
+      </div>
+      <div id="irsfn" class="d-flex flex-column">
+            <div id="ibnw3" class="is-card is-card-circle is-light-text shadow-1">
+                  <div id="ib8wl" class="is-card-content-centered">
+                        <p id="ijpq8" class="size-38 default-font1">03</p>
+                  </div>
+            </div>
+            <div class="row">
+                  <div id="injro" class="center col-md-12">
+                        <div id="iry4r" class="display">
+                              <p id="ibity">PROBLEM</p>
+                              <h1 id="ihvtl">Browser doesn't trust the domain and doesn't post SAML request.
+                              </h1>
+                        </div>
+                  </div>
+            </div>
+            <p id="ifydn">This error can occur if a user keeps reposting SAML assertions or if an error occurs in the
+                  process of accepting a self-signed SSL certificate.<br><b>Caused by: Exception:</b> Unable to find
+                  the current binding.</p>
+      </div>
+      <div id="imqe-2" class="row">
+            <div id="if1m-2" class="col-sm-6 col-md-6"><img src="https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/8dad16b6-c61c-4672-39c3-9429c9474600/medium" id="ii4u-2" alt="An black man and a black woman looking directly at the camera wearing suits"><img src="https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/b486921a-1664-4492-23f6-dea036fe1e00/medium" alt="An black man and a black woman looking directly at the camera wearing suits" id="i9uq0w">
+            </div>
+            <div id="ig64g-2" class="d-flex flex-column">
+                  <div id="i6dat-2" class="row">
+                        <div id="iwnl-2" class="center col-md-12">
+                              <div id="iy6e-2" class="display">
+                                    <p id="imo2-2">SOLUTION</p>
+                                    <h1 id="i46u-2">Try validation.
+                                    </h1>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <p id="inz7kz">Validation and mitigation steps 1:
+            </p>
+            <div froala-component="true" id="in5myr-froala-component" class="fr-view">
+                  <p id="isPasted">1.Open the returned certificate.</p>
+                  <p>2.Verify the validity of the certificate.</p>
+                  <p>3.If the certificate isn't valid, request a new certificate and update it in Access Gateway
+                        Management console.</p>
+                  <p>4.Test the application.</p>
+            </div>
+            <p id="i5hh2i">Validation and mitigation steps 2:
+            </p>
+            <div froala-component="true" id="ipc9g3-froala-component" class="fr-view">
+                  <p id="isPasted">1.Open the returned certificate.</p>
+                  <p>2.Verify the validity of the certificate.</p>
+                  <p>3.If the certificate isn't valid, request a new certificate and update it in Access Gateway
+                        Management console.</p>
+                  <p>4.Test the application.</p>
+            </div>
+      </div>
+</div>
+<style>
+      #i2lnf {
+            background-image: url(https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/4cd95b04-2ae2-4c35-f15b-69433c90f800/medium);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 0 0 0 0;
+            width: 50%;
+            min-height: 312px;
+      }
+
+      #iotji {
+            display: block;
+            font-size: 16px;
+            background-color: #002183;
+            padding: 20px 20px 25px 20px;
+            color: #ffffff;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            font-weight: 100;
+            margin: 0px -15px 9px -15px;
+      }
+
+      #ig64g-2 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+      }
+
+      #if1m-2 {
+            display: block;
+      }
+
+      #ii4u-2 {
+            max-width: 100%;
+            margin: 1.4rem 0 1rem;
+            display: block;
+      }
+
+      #ivo4c-3 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: stretch;
+      }
+
+      #ig64g-3 {
+            display: flex;
+            flex-direction: row;
+            min-width: 280px;
+            width: 50%;
+      }
+
+      #i2lnf-3 {
+            min-height: 280px;
+            background-image: url(https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/433ac0ae-5dcc-407b-c840-42ac20d02f00/medium);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            margin: 16px 0px 16px 0;
+            padding: 0 0 0 0;
+      }
+
+      #i46u {
+            display: block;
+            font-size: 42px;
+            line-height: 51px;
+            font-weight: 600;
+            margin-top: 16px;
+            text-align: left;
+      }
+
+      #imo2 {
+            display: block;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: left;
+            letter-spacing: 2px;
+      }
+
+      #iwnl-2 {
+            text-align: center;
+            display: block;
+            margin: 0px 0 0px -15px;
+      }
+
+      #i46u-2 {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #imo2-2 {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 5px 0px 0px 0px;
+      }
+
+      #ijpq8 {
+            color: #fff;
+            font-size: 24px;
+            display: block;
+            margin-bottom: 0;
+      }
+
+      #ib8wl {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            padding: 0px 0px 0px 0px;
+      }
+
+      #ibnw3 {
+            display: table;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            width: 65px;
+            height: 65px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 500px 500px 500px 500px;
+            background-repeat: repeat;
+            background-position: left top;
+            background-attachment: scroll;
+            background-size: auto;
+            background-color: #002183;
+      }
+
+      #ibity {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #ihvtl {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #injro {
+            text-align: center;
+            display: block;
+      }
+
+      #ifydn {
+            padding: 12px 0px 0px 0px;
+            font-size: 14px;
+      }
+
+      #irsfn {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            width: 100%;
+            margin: 32px 0 0 0;
+      }
+
+      #inkaty {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 5px 0px 0px 0px;
+      }
+
+      #ibsf1p {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #intmud {
+            text-align: center;
+            display: block;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #ixd5fk {
+            padding: 12px 0px 0px 0px;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+      }
+
+      #id1sxm {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+      }
+
+      #ibvmk2 {
+            min-height: 280px;
+            background-image: url(https://imagedelivery.net/ZJ0FbHZlSgB-ISM4cC7eRg/16c976bc-adfc-4a66-5ac5-d7aee5fc7300/medium);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            margin: 16px 0 16px 0;
+            padding: 0 0 0 0;
+      }
+
+      #ikm3dh {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: stretch;
+            align-self: flex-start;
+            margin: 32px 0px 0px 0px;
+      }
+
+      #i6mycu {
+            color: #fff;
+            font-size: 24px;
+            display: block;
+            margin-bottom: 0;
+      }
+
+      #i45ett {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            padding: 0px 0px 0px 0px;
+      }
+
+      #iz8kmf {
+            display: table;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            width: 65px;
+            height: 65px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 500px 500px 500px 500px;
+            background-repeat: repeat;
+            background-position: left top;
+            background-attachment: scroll;
+            background-size: auto;
+            background-color: #002183;
+      }
+
+      #izzhrg {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #i1zd9k {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 8px 0px 0px 0px;
+      }
+
+      #iz3r4x {
+            text-align: center;
+            display: block;
+      }
+
+      #iqq8oj {
+            margin: 16px 32px 0px 0px;
+            font-size: 14px;
+      }
+
+      #i9hdx8 {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            width: 50%;
+      }
+
+      #ie9lja-froala-component {
+            text-align: left;
+            font-size: 14px;
+      }
+
+      #injgyr-froala-component {
+            text-align: left;
+            font-size: 14px;
+      }
+
+      #inep7o {
+            padding: 12px 0px 0px 0px;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+      }
+
+      #iy9ynb {
+            color: #fff;
+            font-size: 24px;
+            display: block;
+            margin-bottom: 0;
+      }
+
+      #ii9gw7 {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            padding: 0px 0px 0px 0px;
+      }
+
+      #i59obc {
+            display: table;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            width: 65px;
+            height: 65px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 500px 500px 500px 500px;
+            background-repeat: repeat;
+            background-position: left top;
+            background-attachment: scroll;
+            background-size: auto;
+            background-color: #002183;
+      }
+
+      #i7n1uf {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #ibmfel {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 16px 0px 0px 0px;
+      }
+
+      #imcp1e {
+            text-align: center;
+            display: block;
+      }
+
+      #iqwcay {
+            padding: 12px 0px 0px 0px;
+            font-size: 14px;
+      }
+
+      #inkbmf {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            width: 100%;
+            margin: 32px 0 0 0;
+      }
+
+      #ipxf3k {
+            max-width: 100%;
+            margin: 1.4rem 0 1rem;
+            display: block;
+      }
+
+      #ilds0n {
+            display: block;
+      }
+
+      #in07qd {
+            display: block;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: left;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            margin: 5px 0px 0px 0px;
+      }
+
+      #iddhxg {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            text-align: left;
+            margin: 8px 0px 0px 0px;
+      }
+
+      #itjv6x {
+            text-align: center;
+            display: block;
+      }
+
+      #iea8on {
+            padding: 16px 0px 0px 0px;
+            font-size: 14px;
+      }
+
+      #ii7stk {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            width: 50%;
+      }
+
+      #i9uq0w {
+            max-width: 100%;
+            margin: 1.4rem 0 1rem;
+            display: block;
+            padding: 0px 6px 0px 0px;
+      }
+
+      #in5myr-froala-component {
+            text-align: left;
+            font-size: 14px;
+            margin: 0 15px 0 0;
+      }
+
+      #ipc9g3-froala-component {
+            text-align: left;
+            font-size: 14px;
+            margin: 0 15px 0 0;
+      }
+
+      #inz7kz {
+            padding: 12px 0px 0px 0px;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+      }
+
+      #i5hh2i {
+            padding: 12px 0px 0px 0px;
+            font-family: SourceSansPro, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+      }
+
+      #i6dat-2 {
+            margin: 0 0px 0 0;
+      }
+
+      #icuzr {
+            margin: 0 0px 0 0;
+      }
+
+      #i8oh04 {
+            margin: 0px -15px 0px -15px;
+      }
+
+      #i4pu7w {
+            flex-direction: row;
+            margin: 0px -15px 0px -15px;
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      #iy6e {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            padding: 0px 15px 0px 15px;
+      }
+
+      @media (max-width: 768px) {
+            #iotji {
+                  margin: 0px -15px 9px -15px;
+            }
+
+            #ii7stk {
+                  margin: 0px 0 0px 0px;
+                  padding: 0 15px 0 0;
+            }
+
+            #i2lnf {
+                  margin: 0px -30px 0px 0px;
+            }
+
+            #i4pu7w {
+                  margin: 0px -15px 0px -15px;
+                  padding: 0px 0px 0 0px;
+                  display: flex;
+                  flex-direction: row;
+            }
+
+            #iy6e {
+                  flex-direction: column;
+            }
+      }
+
+      @media (max-width: 320px) {
+            #iea8on {
+                  padding: 12px 0px 6px 0px;
+                  margin: 0px 0px 6px 13px;
+                  word-break: break-word;
+            }
+
+            #itjv6x {
+                  margin: 0px 3px 0px 14px;
+            }
+
+            #ipc9g3-froala-component {
+                  padding: 0px 0px 0px 10px;
+                  margin: 0px 15px 0px 15px;
+            }
+
+            #in5myr-froala-component {
+                  padding: 0 0 0 10px;
+                  margin: 0px 15px 0px 15px;
+            }
+
+            #i5hh2i {
+                  padding: 12px 0px 0px 10px;
+            }
+
+            #inz7kz {
+                  padding: 12px 0px 0px 15px;
+            }
+
+            #i46u-2 {
+                  padding: 0px 0px 0px 15px;
+            }
+
+            #imo2-2 {
+                  padding: 0px 0px 0px 15px;
+            }
+
+            #iwnl-2 {
+                  padding: 0px 0px 0px 0;
+                  margin: 0px 0px 0px 0;
+            }
+
+            #ig64g-2 {
+                  width: 100%;
+            }
+
+            #i2lnf {
+                  flex-direction: column;
+                  display: block;
+                  width: 100%;
+                  order: 1;
+            }
+
+            #iqq8oj {
+                  margin: 16px 0px 0px 0px;
+            }
+
+            #ii7stk {
+                  padding: 0px 15px 0px 0px;
+                  width: 100%;
+            }
+
+            #iy6e {
+                  width: 100%;
+                  order: 2;
+            }
+
+            #imo2 {
+                  padding: 0 0px 0px 0px;
+                  margin: 16px 0px 0px 0px;
+            }
+
+            #imqe-2 {
+                  padding: 0 0 16px 0;
+            }
+      }
+</style>
